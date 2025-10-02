@@ -97,7 +97,7 @@ app.post("/verify", async (req, res) => {
     res.status(500).json({ success: false, message: "Failed to verify OTP" });
   }
 });
-
+app.get("/",(req,res)=>{res.json("Welcome to otp Verification System")})
 const connectDB = async () => {
   try {
     await mongoose.connect(uri, { dbName: "Otp_Verification" });
