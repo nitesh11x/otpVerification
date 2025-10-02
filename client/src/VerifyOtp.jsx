@@ -7,7 +7,8 @@ const VerifyOtp = () => {
   const email = localStorage.getItem("otpEmail");
 
   const [otp, setOtp] = useState("");
-  const url = "http://localhost:1111";
+  // const url = "http://localhost:1111";
+  const url = "https://otpverification-5qbv.onrender.com";
   const navigate = useNavigate();
 
   const verifyOtp = async (email, otp) => {
