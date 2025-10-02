@@ -3,7 +3,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const SendOtp = () => {
-  const url = "http://localhost:1111";
+  // const url = "http://localhost:1111";
+  const url = "https://otpverification-5qbv.onrender.com";
   const [email, setEmail] = useState("");
   const [setsending, setSetsending] = useState(false);
   const navigate = useNavigate();
