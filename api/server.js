@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://otp-verification-opal.vercel.app,
+    origin: "https://otp-verification-opal.vercel.app",
     methods: ["POST"],
     credentials: true,
   })
